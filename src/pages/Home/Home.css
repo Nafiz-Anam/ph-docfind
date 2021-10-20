@@ -190,6 +190,10 @@
     font-weight: 800;
 }
 
+.load-btn{
+    margin: 35px 0;
+}
+
 .form-box {
     display: flex;
     align-items: center;

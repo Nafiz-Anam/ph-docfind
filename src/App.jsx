@@ -39,10 +39,11 @@ const App = () => {
                         <Route path="/contact">
                             <Contact />
                         </Route>
-                        <Route path="/doctors">
-                            <Doctors />
-                        </Route>
+
                         {/* private routing here  */}
+                        <PrivateRoute path="/doctors">
+                            <Doctors />
+                        </PrivateRoute>
                         <PrivateRoute path="/booking">
                             <Booking />
                         </PrivateRoute>

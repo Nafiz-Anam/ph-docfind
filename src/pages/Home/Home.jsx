@@ -6,11 +6,12 @@ import icon1 from "../../assets/Images/1 (1).png";
 import icon2 from "../../assets/Images/1 (2).png";
 import icon3 from "../../assets/Images/1 (3).png";
 import Service from "../../components/Service/Service";
-import test1 from '../../assets/Images/test (1).jpg'
-import test2 from '../../assets/Images/test (2).jpg'
-import test3 from '../../assets/Images/test (3).jpg'
-import doc1 from '../../assets/Images/doc (1).jpg'
-import doc2 from '../../assets/Images/doc (2).jpg'
+import test1 from "../../assets/Images/test (1).jpg";
+import test2 from "../../assets/Images/test (2).jpg";
+import test3 from "../../assets/Images/test (3).jpg";
+import doc1 from "../../assets/Images/doc (1).jpg";
+import doc2 from "../../assets/Images/doc (2).jpg";
+import { Link } from "react-router-dom";
 
 const Home = () => {
     // set all data
@@ -199,11 +200,18 @@ const Home = () => {
                                     <Service Course={doctor} key={doctor.id} />
                                 ))}
                             </div>
+                            <div className="load-btn text-center">
+                                <Link to='/doctors'>
+                                    <button className="btn btn-quote">
+                                        Show All Doctors
+                                    </button>
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
+
             {/* testimonial section here  */}
             <div className="testimonial">
                 <div className="container">
