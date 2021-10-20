@@ -73,9 +73,12 @@ const Home = () => {
                                     <div className="info">
                                         <h1>Therapiya</h1>
                                         <p>
-                                            Lorem ipsum dolor sit amet
-                                            consectetur adipisicing elit, sed do
-                                            eiusmo
+                                            Therapy is the process of meeting
+                                            with a counsellor or psychotherapist
+                                            for the purpose of resolving
+                                            problematic behaviours, beliefs,
+                                            feelings and related physical
+                                            symptoms.
                                         </p>
                                     </div>
                                 </div>
@@ -88,9 +91,13 @@ const Home = () => {
                                     <div className="info">
                                         <h1>Dentistry</h1>
                                         <p>
-                                            Lorem ipsum dolor sit amet
-                                            consectetur adipisicing elit, sed do
-                                            eiusmo
+                                            Dentistry, also known as dental
+                                            medicine and oral medicine, is a
+                                            branch of medicine that consists of
+                                            the study, diagnosis, prevention,
+                                            and treatment of diseases,
+                                            disorders, and conditions of the
+                                            oral
                                         </p>
                                     </div>
                                 </div>
@@ -103,9 +110,11 @@ const Home = () => {
                                     <div className="info">
                                         <h1>Virology</h1>
                                         <p>
-                                            Lorem ipsum dolor sit amet
-                                            consectetur adipisicing elit, sed do
-                                            eiusmo
+                                            Virology is the scientific study of
+                                            viruses – submicroscopic, parasitic
+                                            organisms of genetic material
+                                            contained in a protein coat – and
+                                            virus-like agents.
                                         </p>
                                     </div>
                                 </div>
@@ -242,8 +251,8 @@ const Home = () => {
                                 <div className="top-part d-flex">
                                     <img src={doc2} alt="" />
                                     <div className="info">
-                                        <h3>Matthew Reyes</h3>
-                                        <p>Obstetrics & Gynaecology</p>
+                                        <h3>Janice Hughes</h3>
+                                        <p>Gynaecology</p>
                                     </div>
                                 </div>
                                 <p className="feed">
@@ -320,7 +329,7 @@ const Home = () => {
                                 </div>
                                 <div className="card-body">
                                     <h5 className="card-title">
-                                        Having overs eight and depression can
+                                        The Connection Between Post-traumatic
                                     </h5>
                                     <button className="btn btn-post">
                                         Read More
@@ -347,7 +356,8 @@ const Home = () => {
                                 </div>
                                 <div className="card-body">
                                     <h5 className="card-title">
-                                        Having overs eight and depression can
+                                        Adjusting to life with a spinal cord
+                                        injury
                                     </h5>
                                     <button className="btn btn-post">
                                         Read More
