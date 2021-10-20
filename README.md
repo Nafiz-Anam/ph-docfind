@@ -12,6 +12,8 @@ Live website link here : [Live link](https://hope-001.web.app/)
 
 Mobile View Screenshot here : [Live link](https://i.ibb.co/VMpY1hj/mobile-View.png)
 
+## Features
+
 ### What is DocFind ?
 
 -   Users can Find the best Doctors near them.
