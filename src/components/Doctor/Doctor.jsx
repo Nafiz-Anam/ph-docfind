@@ -3,6 +3,7 @@ import Service from "../Service/Service";
 import "./Doctor.css";
 
 const Doctor = () => {
+    // fetching data  here 
     const [allDoctors, setAllDoctors] = useState([]);
     useEffect(() => {
         fetch("/doctorsData.json")

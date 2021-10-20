@@ -39,7 +39,6 @@ const App = () => {
                         <Route path="/contact">
                             <Contact />
                         </Route>
-
                         {/* private routing here  */}
                         <PrivateRoute path="/doctors">
                             <Doctors />
@@ -51,9 +50,11 @@ const App = () => {
                             <Single />
                         </PrivateRoute>
                         {/* private routing here  */}
+                        {/* error page  */}
                         <Route path="/*">
                             <Notfound />
                         </Route>
+                        {/* error page  */}
                     </Switch>
                     <Footer />
                 </Router>

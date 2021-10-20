@@ -15,7 +15,9 @@ initializeAuth();
 
 const useFirebase = () => {
     const [user, setUser] = useState({});
-    const [error, setError] = useState("");
+    const [googleError, setGoogleError] = useState("");
+    // all error states
+    const [gitError, setGitError] = useState("");
     const [logError, setLogError] = useState("");
     const [signError, setSignError] = useState("");
     const [isLoading, setIsloading] = useState(true);
@@ -32,7 +34,7 @@ const useFirebase = () => {
                 // console.log(result.user);
             })
             .catch((error) => {
-                setError(error.message);
+                setGoogleError(error.message);
             })
             .finally(() => setIsloading(false));
     };
@@ -45,7 +47,7 @@ const useFirebase = () => {
                 // console.log(result.user);
             })
             .catch((error) => {
-                setError(error.message);
+                setGitError(error.message);
             })
             .finally(() => setIsloading(false));
     };
@@ -110,7 +112,8 @@ const useFirebase = () => {
         signinUsingGoogle,
         signinWithGithub,
         user,
-        error,
+        googleError,
+        gitError,
         signout,
         handleEmail,
         handlePass,

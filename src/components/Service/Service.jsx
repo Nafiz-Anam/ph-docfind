@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./Service.css";
 
 const Service = (props) => {
+    // destructuring data here 
     const { id, title, img, name, ratings, price, details } = props.Course;
     return (
         <div className="col-lg-4">

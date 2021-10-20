@@ -201,7 +201,7 @@ const Home = () => {
                                 ))}
                             </div>
                             <div className="load-btn text-center">
-                                <Link to='/doctors'>
+                                <Link to="/doctors">
                                     <button className="btn btn-quote">
                                         Show All Doctors
                                     </button>
@@ -282,10 +282,7 @@ const Home = () => {
                                             placeholder="Email Address"
                                         />
                                     </div>
-                                    <button
-                                        type="submit"
-                                        className="btn btn-news"
-                                    >
+                                    <button className="btn btn-news">
                                         SUBSCRIBE
                                     </button>
                                 </form>

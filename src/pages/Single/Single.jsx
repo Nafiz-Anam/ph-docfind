@@ -203,10 +203,7 @@ const Single = () => {
                                         </div>
                                     </div>
                                     <div>
-                                        <button
-                                            type="submit"
-                                            className="btn btn-booking"
-                                        >
+                                        <button className="btn btn-booking">
                                             Book Appointment
                                         </button>
                                     </div>

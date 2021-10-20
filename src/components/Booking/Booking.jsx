@@ -302,10 +302,7 @@ const Booking = () => {
                                 </p>
                             </div>
                             <div>
-                                <button
-                                    type="submit"
-                                    className="btn btn-booking"
-                                >
+                                <button className="btn btn-booking">
                                     Confirm And Pay
                                 </button>
                             </div>

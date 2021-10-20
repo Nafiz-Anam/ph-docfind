@@ -90,10 +90,10 @@ const Footer = () => {
                         <h3>Useful Links</h3>
                         <ul className="service">
                             <li>
-                                <Link to="/">Home</Link>
+                                <Link to="/home">Home</Link>
                             </li>
                             <li>
-                                <Link to="/">About</Link>
+                                <Link to="/about">About</Link>
                             </li>
                             <li>
                                 <Link to="/">Services</Link>
@@ -102,13 +102,14 @@ const Footer = () => {
                                 <Link to="/">News</Link>
                             </li>
                             <li>
-                                <Link to="/">Doctors</Link>
+                                <Link to="/doctors">Doctors</Link>
                             </li>
                             <li>
-                                <Link to="/">Contact Us</Link>
+                                <Link to="/contact">Contact Us</Link>
                             </li>
                         </ul>
                     </div>
+                    {/* subscribe area  */}
                     <div className="col-lg-3 footer-form">
                         <h3>Subscribe</h3>
                         <form>
@@ -118,10 +119,7 @@ const Footer = () => {
                                 id="exampleInputEmail1"
                                 placeholder="Email..."
                             ></input>
-                            <button
-                                type="submit"
-                                className="btn btn-primary btn-sub"
-                            >
+                            <button className="btn btn-primary btn-sub">
                                 Submit
                             </button>
                             <p>
@@ -132,10 +130,13 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
+            {/* footer bottom area  */}
             <div className="footer-bottom container">
                 <div className="row">
                     <div className="col-lg-6">
-                        <p className='copy-right'>© Website 2022 | All Rights Reserved</p>
+                        <p className="copy-right">
+                            © Website 2022 | All Rights Reserved
+                        </p>
                     </div>
                     <div className="col-lg-6">
                         <ul className="bottom-links">

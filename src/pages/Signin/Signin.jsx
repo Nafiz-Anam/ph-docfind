@@ -11,12 +11,16 @@ const Signin = () => {
         signinWithGithub,
         handleLogin,
         logError,
+        googleError,
+        gitError,
     } = useAuth();
     return (
         <div className="signin-page">
             <div className="error container">
                 <div className="alert" role="alert">
                     {logError}
+                    {googleError}
+                    {gitError}
                 </div>
             </div>
             <h1 className="text-center signin-title">Please SignIn First</h1>
