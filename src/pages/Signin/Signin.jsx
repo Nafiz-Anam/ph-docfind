@@ -1,20 +1,24 @@
 import React from "react";
 import "./Signin.css";
-// import useFirebase from "../../Hooks/useFirebase";
 import { Link } from "react-router-dom";
 import useAuth from "../../Hooks/useAuth";
 
 const Signin = () => {
-    // const { signinUsingGoogle } = useFirebase();
     const {
         handleEmail,
         handlePass,
         signinUsingGoogle,
         signinWithGithub,
         handleLogin,
+        logError,
     } = useAuth();
     return (
         <div className="signin-page">
+            <div className="error container">
+                <div className="alert" role="alert">
+                    {logError}
+                </div>
+            </div>
             <h1 className="text-center signin-title">Please SignIn First</h1>
             <div className="signup-form">
                 <form onSubmit={handleLogin}>

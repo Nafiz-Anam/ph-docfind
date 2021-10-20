@@ -16,6 +16,8 @@ initializeAuth();
 const useFirebase = () => {
     const [user, setUser] = useState({});
     const [error, setError] = useState("");
+    const [logError, setLogError] = useState("");
+    const [signError, setSignError] = useState("");
     const [isLoading, setIsloading] = useState(true);
 
     const auth = getAuth();
@@ -27,7 +29,7 @@ const useFirebase = () => {
         signInWithPopup(auth, googleProvider)
             .then((result) => {
                 setUser(result.user);
-                console.log(result.user);
+                // console.log(result.user);
             })
             .catch((error) => {
                 setError(error.message);
@@ -40,7 +42,7 @@ const useFirebase = () => {
         signInWithPopup(auth, githubProvider)
             .then((result) => {
                 setUser(result.user);
-                console.log(result.user);
+                // console.log(result.user);
             })
             .catch((error) => {
                 setError(error.message);
@@ -64,10 +66,10 @@ const useFirebase = () => {
         createUserWithEmailAndPassword(auth, userEmail, userPass)
             .then((result) => {
                 setUser(result.user);
-                console.log(result.user);
+                // console.log(result.user);
             })
             .catch((error) => {
-                setError(error.message);
+                setSignError(error.message);
             });
     };
     const handleLogin = (e) => {
@@ -79,7 +81,7 @@ const useFirebase = () => {
                 console.log(result.user);
             })
             .catch((error) => {
-                setError(error.message);
+                setLogError(error.message);
             })
             .finally(() => setIsloading(false));
     };
@@ -115,6 +117,8 @@ const useFirebase = () => {
         handleRegister,
         handleLogin,
         isLoading,
+        logError,
+        signError,
     };
 };
 

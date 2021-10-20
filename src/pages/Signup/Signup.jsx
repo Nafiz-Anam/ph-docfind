@@ -4,9 +4,14 @@ import useAuth from "../../Hooks/useAuth";
 import "./Signup.css";
 
 const Signup = () => {
-    const { handleEmail, handlePass, handleRegister } = useAuth();
+    const { handleEmail, handlePass, handleRegister, signError } = useAuth();
     return (
         <div className="signup">
+            <div className="error container">
+                <div className="alert " role="alert">
+                    {signError}
+                </div>
+            </div>
             <h1 className="text-center">Please SignUp Here</h1>
             <div className="container">
                 <div className="signup-form">
