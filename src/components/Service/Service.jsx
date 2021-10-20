@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./Service.css";
 
 const Service = (props) => {
-    const { id, title, img, name, ratings, price } = props.Course;
+    const { id, title, img, name, ratings, price, details } = props.Course;
     return (
         <div className="col-lg-4">
             {/* single course card  */}
@@ -21,6 +21,7 @@ const Service = (props) => {
                         <i className="fas fa-star"></i>
                         <i className="fas fa-star-half"></i> <b>{ratings}</b>
                     </p>
+                    <p>{details.slice(0, 200)}</p>
                     <h6>${price}</h6>
                     <button className="btn course-btn m-2">
                         <Link to="/booking">Book Appointment</Link>
