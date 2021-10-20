@@ -1,0 +1,51 @@
+.signup{
+    padding: 80px 0;
+}
+.signup h1{
+    font-size: 65px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.signup-form {
+    display: flex;
+    justify-content: center;
+}
+
+.signup-form input {
+    height: 50px;
+}
+
+.btn-signup {
+    width: 100%;
+    background-color: #00acb1;
+    color: white;
+    font-size: 17px;
+    padding: 15px 0;
+}
+
+.btn-google{
+    border: #00acb1 2px solid;
+    color: #00acb1;
+    font-weight: 600;
+}
+.btn-google:hover{
+    border: #00acb1 2px solid;
+    color: #00acb1;
+    font-weight: 600;
+}
+.btn-git{
+    background-color: black;
+    color: white;
+    font-weight: 600;
+}
+.btn-git:hover{
+    color: white;
+    font-weight: 600;
+}
+
+.btn-box{
+    display: flex;
+    justify-content: center;
+}

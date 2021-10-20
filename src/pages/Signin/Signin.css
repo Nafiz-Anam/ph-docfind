@@ -1,0 +1,14 @@
+.signin-page {
+    padding: 80px 0;
+}
+.signin-title {
+    font-size: 65px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.btn-here {
+    color: white;
+    background-color: #00acb1;
+}
